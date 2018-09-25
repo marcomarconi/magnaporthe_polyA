@@ -1,3 +1,6 @@
+```console
+
+
 ########
 # Pîpeline to reproduce the experiment "Genome-wide polyadenylation site mapping datasets in the rice blast fungus Magnaporthe oryzae"
 ########
@@ -76,4 +79,6 @@ for f in `ls *.polyA_all_m`; do cut $f -d " " -f 1,2,3,4,5 | awk '{ if ($4 == "+
 for f in `ls *.notpolyA_all_m_high`; do cut $f -d " " -f 1,2,3,4,5 | awk '{ if ($4 == "+") sense = "-"; else sense = "+"; printf "%s\tmarco\tpolyA_site\t%d\t%d\t.\t%s\t.\ttranscript=%s;value=%d\n", $3, $2, $2, sense, $5, $1  }' > "${f%%.*}"_notpolyA_high.gff ; done
 for f in `ls *.notpolyA_all_m_low`;  do cut $f -d " " -f 1,2,3,4,5 | awk '{ if ($4 == "+") sense = "-"; else sense = "+"; printf "%s\tmarco\tpolyA_site\t%d\t%d\t.\t%s\t.\ttranscript=%s;value=%d\n", $3, $2, $2, sense, $5, $1  }' > "${f%%.*}"_notpolyA_low.gff ; done
 
+
+```
 
