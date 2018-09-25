@@ -5,16 +5,16 @@
 # Pîpeline to reproduce the experiment "Genome-wide polyadenylation site mapping datasets in the rice blast fungus Magnaporthe oryzae"
 ########
 
-# trim low quality reads, polyA tails and adapters, to be called for the paired-end files
+# trim low quality reads, polyA tails and adapters, to be called for the paired-end fastq files
 fastq-mcf -o file1_trimmed_1.fastq -o file2_trimmed_2.fastq -0 -l 17 -u adaptor.fa file1.fastq file2.fastq  
 
     
 # build gmap database
 gmap_build -d MG8_21 -D ./MG8_21 Magnaporthe_oryzae.MG8.23.gff3
 
-# align
-
+# align, to be repeated for all trimmed files
 gsnap -B 5 -t 8 -A sam -d MG8_21 -D ./MG8_21  a_1.fastq a_2.fastq > "${f%%.*}".sam
+
 
 # convert to bam, extract first reads only, sort and index
 for f in `ls *.sam `
