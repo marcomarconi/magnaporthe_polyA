@@ -6,14 +6,61 @@
 ########
 
 # trim low quality reads, polyA tails and adapters, to be called for the paired-end fastq files
-fastq-mcf -o file1_trimmed_1.fastq -o file2_trimmed_2.fastq -0 -l 17 -u adaptor.fa file1.fastq file2.fastq  
+fastq-mcf -o 2D4--C-1_1_trimmed.fastq -o 2D4--C-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--C-1_1.fastq.gz 2D4--C-1_2.fastq.gz 
+fastq-mcf -o 2D4-CM-1_1_trimmed.fastq -o 2D4-CM-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-CM-1_1.fastq.gz 2D4-CM-1_2.fastq.gz 
+fastq-mcf -o 2D4-CM-2_1_trimmed.fastq -o 2D4-CM-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-CM-2_1.fastq.gz 2D4-CM-2_2.fastq.gz 
+fastq-mcf -o 2D4-MM-1_1_trimmed.fastq -o 2D4-MM-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-MM-1_1.fastq.gz 2D4-MM-1_2.fastq.gz 
+fastq-mcf -o 2D4-MM-2_1_trimmed.fastq -o 2D4-MM-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-MM-2_1.fastq.gz 2D4-MM-2_2.fastq.gz 
+fastq-mcf -o 2D4--N-1_1_trimmed.fastq -o 2D4--N-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--N-1_1.fastq.gz 2D4--N-1_2.fastq.gz 
+fastq-mcf -o WT--C-1_1_trimmed.fastq -o WT--C-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--C-1_1.fastq.gz WT--C-1_2.fastq.gz 
+fastq-mcf -o WT-CM-1_1_trimmed.fastq -o WT-CM-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-CM-1_1.fastq.gz WT-CM-1_2.fastq.gz
+fastq-mcf -o WT-CM-2_1_trimmed.fastq -o WT-CM-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-CM-2_1.fastq.gz WT-CM-2_2.fastq.gz 
+fastq-mcf -o WT-MM-1_1_trimmed.fastq -o WT-MM-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-MM-1_1.fastq.gz WT-MM-1_2.fastq.gz 
+fastq-mcf -o WT-MM-2_1_trimmed.fastq -o WT-MM-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-MM-2_1.fastq.gz WT-MM-2_2.fastq.gz 
+fastq-mcf -o WT--N-1_1_trimmed.fastq -o WT--N-1_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--N-1_1.fastq.gz WT--N-1_2.fastq.gz
+fastq-mcf -o 2D4--C-2_1_trimmed.fastq -o 2D4--C-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--C-2_1.fastq.gz 2D4--C-2_2.fastq.gz
+fastq-mcf -o 2D4--C-3_1_trimmed.fastq -o 2D4--C-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--C-3_1.fastq.gz 2D4--C-3_2.fastq.gz 
+fastq-mcf -o 2D4-CM-3_1_trimmed.fastq -o 2D4-CM-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-CM-3_1.fastq.gz 2D4-CM-3_2.fastq.gz 
+fastq-mcf -o 2D4-MM-3_1_trimmed.fastq -o 2D4-MM-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4-MM-3_1.fastq.gz 2D4-MM-3_2.fastq.gz
+fastq-mcf -o 2D4--N-2_1_trimmed.fastq -o 2D4--N-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--N-2_1.fastq.gz 2D4--N-2_2.fastq.gz
+fastq-mcf -o 2D4--N-3_1_trimmed.fastq -o 2D4--N-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa 2D4--N-3_1.fastq.gz 2D4--N-3_2.fastq.gz 
+fastq-mcf -o WT--C-2_1_trimmed.fastq -o WT--C-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--C-2_1.fastq.gz WT--C-2_2.fastq.gz
+fastq-mcf -o WT--C-3_1_trimmed.fastq -o WT--C-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--C-3_1.fastq.gz WT--C-3_2.fastq.gz
+fastq-mcf -o WT-CM-3_1_trimmed.fastq -o WT-CM-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-CM-3_1.fastq.gz WT-CM-3_2.fastq.gz 
+fastq-mcf -o WT-MM-3_1_trimmed.fastq -o WT-MM-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT-MM-3_1.fastq.gz WT-MM-3_2.fastq.gz 
+fastq-mcf -o WT--N-2_1_trimmed.fastq -o WT--N-2_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--N-2_1.fastq.gz WT--N-2_2.fastq.gz
+fastq-mcf -o WT--N-3_1_trimmed.fastq -o WT--N-3_2_trimmed.fastq -0 -l 17 -u adaptor.fa WT--N-3_1.fastq.gz WT--N-3_2.fastq.gz
 
-    
+
 # build gmap database
-gmap_build -d MG8_21 -D ./MG8_21 Magnaporthe_oryzae.MG8.23.gff3
+gmap_build -d MG8_23 -D ./MG8_23 Magnaporthe_oryzae.MG8.23.dna.toplevel.fa
 
 # align, to be repeated for all trimmed files
-gsnap -B 5 -t 8 -A sam -d MG8_21 -D ./MG8_21  a_1.fastq a_2.fastq > "${f%%.*}".sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--C-1_1_trimmed.fastq 2D4--C-1_2_trimmed.fastq > 2D4--C-1.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-CM-1_1_trimmed.fastq 2D4-CM-1_2_trimmed.fastq > 2D4-CM-1.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-CM-2_1_trimmed.fastq 2D4-CM-2_2_trimmed.fastq > 2D4-CM-2.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-MM-1_1_trimmed.fastq 2D4-MM-1_2_trimmed.fastq > 2D4-MM-1.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-MM-2_1_trimmed.fastq 2D4-MM-2_2_trimmed.fastq > 2D4-MM-2.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--N-1_1_trimmed.fastq 2D4--N-1_2_trimmed.fastq > 2D4--N-1.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--C-1_1_trimmed.fastq WT--C-1_2_trimmed.fastq > WT--C-1.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-CM-1_1_trimmed.fastq WT-CM-1_2_trimmed.fastq > WT-CM-1.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-CM-2_1_trimmed.fastq WT-CM-2_2_trimmed.fastq > WT-CM-2.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-MM-1_1_trimmed.fastq WT-MM-1_2_trimmed.fastq > WT-MM-1.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-MM-2_1_trimmed.fastq WT-MM-2_2_trimmed.fastq > WT-MM-2.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--N-1_1_trimmed.fastq WT--N-1_2_trimmed.fastq > WT--N-1.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--C-2_1_trimmed.fastq 2D4--C-2_2_trimmed.fastq > 2D4--C-2.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--C-3_1_trimmed.fastq 2D4--C-3_2_trimmed.fastq > 2D4--C-3.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-CM-3_1_trimmed.fastq 2D4-CM-3_2_trimmed.fastq > 2D4-CM-3.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4-MM-3_1_trimmed.fastq 2D4-MM-3_2_trimmed.fastq > 2D4-MM-3.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--N-2_1_trimmed.fastq 2D4--N-2_2_trimmed.fastq > 2D4--N-2.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails 2D4--N-3_1_trimmed.fastq 2D4--N-3_2_trimmed.fastq > 2D4--N-3.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--C-2_1_trimmed.fastq WT--C-2_2_trimmed.fastq > WT--C-2.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--C-3_1_trimmed.fastq WT--C-3_2_trimmed.fastq > WT--C-3.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-CM-3_1_trimmed.fastq WT-CM-3_2_trimmed.fastq > WT-CM-3.sam 
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT-MM-3_1_trimmed.fastq WT-MM-3_2_trimmed.fastq > WT-MM-3.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--N-2_1_trimmed.fastq WT--N-2_2_trimmed.fastq > WT--N-2.sam
+gsnap -B 5 -t 8 -A sam -d MG8_23 -D ./MG8_23/  --nofails WT--N-3_1_trimmed.fastq WT--N-3_2_trimmed.fastq > WT--N-3.sam
+
 
 
 # convert to bam, extract first reads only, sort and index
